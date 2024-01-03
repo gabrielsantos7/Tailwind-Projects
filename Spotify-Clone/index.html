@@ -11,6 +11,8 @@
     <title>Spotify</title>
     <!-- Base CSS -->
     <link rel="stylesheet" href="style.css" />
+    <!-- JS -->
+    <script src="assets/js/script.js" defer></script>
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -23,57 +25,75 @@
   <body>
     <!-- NavBar -->
     <header>
-      <div class="flex bg-black w-full px-3 md:px-20 py-4">
-        <div class="container flex items-center mx-auto">
-          <div>
-            <a href="#">
-              <img
-                src="assets/img/spotify-logo.png"
-                alt="Logo do Spotify"
-                class="w-20 md:w-125px"
-              />
-            </a>
-          </div>
-
-          <div class="flex justify-end flex-1 md:hidden pr-3">
-            <div>
-              <div class="bg-white h-1 w-5 rounded-sm"></div>
-              <div class="bg-white h-1 w-5 rounded-sm my-1"></div>
-              <div class="bg-white h-1 w-5 rounded-sm"></div>
-            </div>
-          </div>
-
-          <div class="items-end text-white font-bold flex-1 hidden md:flex">
-            <nav class="flex-1">
-              <ul class="flex justify-end flex-1 gap-4">
-                <li>
-                  <a href="#" class="hover:text-hoverspt text-sm">Premium</a>
-                </li>
-                <li>
-                  <a href="#" class="hover:text-hoverspt text-sm">Ajuda</a>
-                </li>
-                <li>
-                  <a href="#" class="hover:text-hoverspt text-sm">Baixar</a>
-                </li>
-
-                <li><span class="border-r border-white"></span></li>
-                <li>
-                  <a href="#" class="hover:text-hoverspt text-sm">Login</a>
-                </li>
-                <li>
-                  <a href="#" class="hover:text-hoverspt text-sm">Cadastrar</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+      <nav
+        class="flex items-center justify-between flex-wrap bg-black text-white p-4 w-full top-0"
+      >
+        <!-- Logo -->
+        <div class="flex items-center flex-shrink-0 mr-6">
+          <a href="#">
+            <img
+              src="assets/img/spotify-logo.png"
+              alt="Logo do Spotify"
+              class="w-20 md:w-125px"
+            />
+          </a>
         </div>
-      </div>
+
+        <!-- Nav Toggle -->
+        <div class="block lg:hidden">
+          <button id="nav-toggle" class="flex items-center px-3 py-2 rounded-md">
+            <div>
+              <div class="bg-white h-1 w-5 rounded"></div>
+              <div class="bg-white h-1 w-5 rounded my-1"></div>
+              <div class="bg-white h-1 w-5 rounded"></div>
+            </div>
+          </button>
+        </div>
+
+        <!-- Nav Content -->
+        <div
+          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0"
+          id="nav-content"
+        >
+          <ul
+            class="lg:flex justify-end flex-1 text-center items-center gap-7 md:mr-20"
+          >
+            <li>
+              <a href="#" class="hover:text-hoverspt text-sm font-bold"
+                >Premium</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-hoverspt text-sm font-bold"
+                >Ajuda</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-hoverspt text-sm font-bold"
+                >Baixar</a
+              >
+            </li>
+
+            <li><span class="lg:border-r border-white"></span></li>
+            <li>
+              <a href="#" class="hover:text-hoverspt text-sm font-bold"
+                >Inscrever-se</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-hoverspt text-sm font-bold"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <!-- Content -->
+    <!-- Main -->
     <main>
       <div
-        class="flex flex-col justify-center text-center bg-main bg-purple-main text-green-main py-40 px-4"
+        class="flex flex-col justify-center text-center bg-main bg-purple-main text-green-main md:py-12 py-40 px-10"
       >
         <h1
           class="text-5xl md:text-9xl mb-10 font-bold max-w-4xl mx-auto leading-none font-gotham"
@@ -94,15 +114,25 @@
 
     <!-- Footer -->
     <footer>
-      <div class="grid grid-cols-1 md:grid-cols-6 bg-black text-white p-4 md:p-20">
+      <div
+        class="grid grid-cols-1 md:grid-cols-6 bg-black text-white p-4 md:p-20"
+      >
         <div class="md:col-span-1 pt-10 md:pt-0">
           <a href="#">
-            <img src="assets/img/spotify-logo.png" alt="Logo do Spotify" class="w-20 md:w-125px opacity-70 hover:opacity-100 transition duration-300" />
+            <img
+              src="assets/img/spotify-logo.png"
+              alt="Logo do Spotify"
+              class="w-20 md:w-125px opacity-70 hover:opacity-100 transition duration-300"
+            />
           </a>
         </div>
 
         <nav class="md:col-span-1 pt-10 md:pt-4">
-          <h3 class="font-gotham uppercase text-gray-500 font-bold text-xs tracking-widest mb-5">Empresa</h3>
+          <h3
+            class="font-gotham uppercase text-gray-500 font-bold text-xs tracking-widest mb-5"
+          >
+            Empresa
+          </h3>
           <ul>
             <li class="mb-5"><a href="#">Sobre</a></li>
             <li class="mb-5"><a href="#">Empregos</a></li>
@@ -111,7 +141,11 @@
         </nav>
 
         <nav class="md:col-span-1 pt-10 md:pt-4">
-          <h3 class="font-gotham uppercase text-gray-500 font-bold text-xs tracking-widest mb-5">Comunidades</h3>
+          <h3
+            class="font-gotham uppercase text-gray-500 font-bold text-xs tracking-widest mb-5"
+          >
+            Comunidades
+          </h3>
           <ul>
             <li class="mb-5"><a href="#">Para artistas</a></li>
             <li class="mb-5"><a href="#">Desenvolvedores</a></li>
@@ -122,7 +156,11 @@
         </nav>
 
         <nav class="md:col-span-2 pt-10 md:pt-4">
-          <h3 class="font-gotham uppercase text-gray-500 font-bold text-xs tracking-widest mb-5">Links Úteis</h3>
+          <h3
+            class="font-gotham uppercase text-gray-500 font-bold text-xs tracking-widest mb-5"
+          >
+            Links Úteis
+          </h3>
           <ul>
             <li class="mb-5"><a href="#">Ajuda</a></li>
             <li class="mb-5"><a href="#">Player da Web</a></li>
@@ -132,13 +170,19 @@
 
         <nav class="md:col-span-1 pt-10 md:pt-4">
           <ul class="flex md:justify-end gap-4">
-            <li class="flex items-center justify-center text-2xl bg-gray-900 w-12 h-12 rounded-full hover:text-green-main">
+            <li
+              class="flex items-center justify-center text-2xl bg-gray-900 w-12 h-12 rounded-full hover:text-green-main"
+            >
               <a href="#"><i class="fab fa-instagram"></i></a>
             </li>
-            <li class="flex items-center justify-center text-2xl bg-gray-900 w-12 h-12 rounded-full hover:text-green-main">
+            <li
+              class="flex items-center justify-center text-2xl bg-gray-900 w-12 h-12 rounded-full hover:text-green-main"
+            >
               <a href="#"><i class="fab fa-twitter"></i></a>
             </li>
-            <li class="flex items-center justify-center text-2xl bg-gray-900 w-12 h-12 rounded-full hover:text-green-main">
+            <li
+              class="flex items-center justify-center text-2xl bg-gray-900 w-12 h-12 rounded-full hover:text-green-main"
+            >
               <a href="#"><i class="fab fa-facebook-f"></i></a>
             </li>
           </ul>
@@ -146,16 +190,28 @@
 
         <nav class="md:col-span-4 mt-20">
           <ul>
-            <li class="inline-block text-xs text-gray-600 mr-4"><a href="#">Legal</a></li>
-            <li class="inline-block text-xs text-gray-600 mr-4"><a href="#">Centro de Privacidade</a></li>
-            <li class="inline-block text-xs text-gray-600 mr-4"><a href="#">Política de Privacidade</a></li>
-            <li class="inline-block text-xs text-gray-600 mr-4"><a href="#">Cookies</a></li>
-            <li class="inline-block text-xs text-gray-600 mr-4"><a href="#">Sobre anúncios</a></li>
+            <li class="inline-block text-xs text-gray-600 mr-4">
+              <a href="#">Legal</a>
+            </li>
+            <li class="inline-block text-xs text-gray-600 mr-4">
+              <a href="#">Centro de Privacidade</a>
+            </li>
+            <li class="inline-block text-xs text-gray-600 mr-4">
+              <a href="#">Política de Privacidade</a>
+            </li>
+            <li class="inline-block text-xs text-gray-600 mr-4">
+              <a href="#">Cookies</a>
+            </li>
+            <li class="inline-block text-xs text-gray-600 mr-4">
+              <a href="#">Sobre anúncios</a>
+            </li>
           </ul>
         </nav>
 
         <div class="md:col-span-2 mt-20">
-          <p class="flex justify-end text-xs text-gray-500">&copy; 2024 Spotify AB</p>
+          <p class="flex justify-end text-xs text-gray-500">
+            &copy; 2024 Spotify AB
+          </p>
         </div>
       </div>
     </footer>

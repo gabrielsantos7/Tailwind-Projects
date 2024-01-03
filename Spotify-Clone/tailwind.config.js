@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html"],
+  content: ["./index.html", "./assets/js/script.js"],
   theme: {
     extend: {
       spacing: {
@@ -9,7 +9,7 @@ export default {
       },
       colors: {
         hoverspt: "#18d760",
-        "purple-main": "#2d4689",
+        "purple-main": "#2D46B9",
         "green-main": "#1ed760",
       },
       backgroundImage: (theme) => ({
