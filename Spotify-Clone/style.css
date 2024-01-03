@@ -7,3 +7,8 @@
     @apply bg-spotify-theme-mobile md:bg-spotify-theme bg-banner-mobile md:bg-banner bg-195% md:bg-175%;
   }
 }
+
+@font-face {
+  font-family: "Gotham";
+  src: url("assets/fonts/gotham/GothamMedium.ttf") format("truetype");
+}

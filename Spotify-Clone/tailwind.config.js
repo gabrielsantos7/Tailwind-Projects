@@ -27,6 +27,9 @@ export default {
       fontSize: {
         "9xl": "9rem",
       },
+      fontFamily: {
+        gotham: ["Gotham", "sans-serif"],
+      },
     },
   },
   plugins: [],
