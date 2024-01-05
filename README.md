@@ -9,11 +9,14 @@ Este repositório é dedicado aos projetos desenvolvidos durante o curso de Tail
 ### **Clone do Spotify**🎵
 
 - Este projeto é uma réplica da página inicial do Spotify, utilizando Tailwind e a biblioteca de ícones Font Awesome. A interface é responsiva e se adapta a diferentes tamanhos de tela. O layout e os estilos foram criados para se assemelhar o máximo possível à página inicial do Spotify.
-  `Mais em breve...`
+
+### **Clone da Página de Login do Facebook** 🔒
+
+- Este projeto é uma replica da página de login do Facebook. Foi desenvolvido com Tailwind para a estilização. Ele busca replicar a aparência e a funcionalidade da página de login do Facebook, seguindo as diretrizes visuais e interativas. Vale ressaltar que a interface também é responsiva.
 
 ## **Pré-requisitos ⚙️**
 
-- [ ] Node.js instalado
+- Node.js instalado
 
 ## **Como Executar os Projetos 🛠️**
 
